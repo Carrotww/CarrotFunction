@@ -14,12 +14,13 @@ def solution(num: str) -> int:
     for i in num_list:
         if i >= 2:
             j = 2
-            while j <= int(i ** 0.5) + 1:
+            while j <= int(i ** 0.5):
                 if i % j == 0:
                     break
-                j += 1
                 if j == int(i ** 0.5):
                     count_prime += 1
+                    break
+                j += 1
 
     # for i in range(len(num_list)):
     #     sqrt = int(num_list[i] ** 0.5) + 1
