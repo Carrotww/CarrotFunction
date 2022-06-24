@@ -14,7 +14,9 @@ def solution(num: str) -> int:
 
     for i in num_list:
         is_prime = True
-        if i >= 2:
+        if i == 2:
+            count_prime += 1
+        if i > 2:
             j = 2
             sqrt = int(i ** 0.5)
             while j <= sqrt + 1:
@@ -31,4 +33,4 @@ def solution(num: str) -> int:
 # print(solution("17"))
 # print(solution("011"))
 # print(solution("3"))
-print(solution("0011"))
+print(solution("2"))
