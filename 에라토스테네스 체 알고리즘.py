@@ -17,3 +17,5 @@ def find_prime(num: int) -> list:
     return prime_list
 
 print(find_prime(25))
+print(find_prime(101))
+print(find_prime(1001))
